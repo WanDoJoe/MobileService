@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+   <!-- 配置映射类的别名 -->
+ 	<typeAliases>
+      <!-- <typeAlias alias="User" type="com.ssm.model.User"/>-->
+      
+     <!--  <typeAlias alias="InfoModel" type="com.seventythree.model.InfoModel"/> -->
+     <!--<typeAlias alias="UserInfo" type="com.sinosoft.bean.UserBean"/> -->
+        <typeAlias type="com.sinosoft.mobileservice.bean.BackUser" alias="BackUser"></typeAlias>
+   </typeAliases>  
+   <!-- 配置Mapper文件的路径 -->
+   <mappers>
+       <mapper resource="com/sinosoft/mobileservice/mybatis/mapper/BackUserMapper.xml"></mapper>
+       <mapper resource="com/sinosoft/mobileservice/mybatis/mapper/ShiroUserMapper.xml"></mapper>
+       <!--<mapper resource="com/sinosoft/mybatis/mapper/UserMapper.xml"/>-->
+      <!--  <mapper resource="com/sinosoft/mybatis/mapper/InfoMapper.xml"/> -->
+   </mappers>
+</configuration>
